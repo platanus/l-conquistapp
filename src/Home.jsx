@@ -27,7 +27,11 @@ export default function Home() {
             />
           )}
         </TouchableOpacity>
-
+        {isError && (
+          <Text style={tailwind('text-red-500 text-center mt-4')}>
+            Ha ocurrido un error 🥲
+          </Text>
+        )}
       </View>
     </View>
   );
